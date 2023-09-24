@@ -1,4 +1,4 @@
-#Practice 1
+'''#Practice 1
 x = int(input("enter number ==> "))
 if x > 100:
     if x < 1000:
@@ -108,67 +108,88 @@ for i in range(1, limit):
 
 
 #ASSIGNMENT 1
-try:
-    hours=int(input("Enter Hours: "))
-    rate=float(input("Enter Rate: "))
-except:
-   print("Error, please enter numeric input")
+while True:
+
+    hours = 0
+    rate = 0
+
+    try:
+     hours = int(input("Enter Hours: "))
+    except:
+     print("Error, please enter numeric input")
+     break
+
+    try:
+     rate = float(input("Enter Rate: "))
+    except:
+     print("Error, please enter numeric input")
+     break
 
 
-if hours<=40:
-   salary = hours*rate
-   print ("your Salary is: " + str(salary))
-else:
-   if hours>=40:                                 #45
-    salary = (40*rate) + ((hours%40)*10*1.5)     #45%40 = 5x10.1,5
-    print ("your Salary is: " + str(salary))
+    if hours <= 40:
+     salary = hours*rate
+     print ("your Salary is: " + str(salary))
+    else:
+     if hours >= 40:                                 #45
+      salary = (40*rate) + ((hours%40)*rate*1.5)     #45%40 = 5x10.1,5
+      print ("your Salary is: " + str(salary))
 
 
 # ASSIGNMENT 2
+
+score = 0
+
 try:
     score = int(input("Enter Your Score: "))
-except:
-  print("please enter numeric input between 0 and 100")
 
-if 0 <= score <= 100:
- if score>= 90:
-    print("A",end="")
- else:
-    if score >= 80:
-     print("B",end="")
-    else:
-       if score >= 70:
-        print("C",end="")
-       else:
-        if score >= 60:
-         print("D",end="")
+
+    if 0 <= score <= 100:
+     if score>= 90:
+       print("A",end="")
+     else:
+      if score >= 80:
+       print("B",end="")
+      else:
+        if score >= 70:
+            print("C",end="")
         else:
-          print("F",end="")
- print(" Grade")
+           if score >= 60:
+            print("D",end="")
+           else:
+            if score >= 0:
+                print("F",end="")
+    
+    else:
+     print("please enter numeric input between 0 and 100")
 
-else:
-    print("please enter numeric input between 0 and 100")
+    print(" Grade")
 
+except:
+  print("please enter numeric input between 0 and 100")'''
 
 #ASSIGNMENT 3
 
 total_input = 0
 total = 0
-
+average = 0
 
 while True:
+    
     number = input("Enter a number: ")
     if number == 'done':
         break
 
     try :
         num1 = float(number)
-    except:
-        print('Invailed Input')
-        continue
-    total_input = total_input +1
-    total = total + num1
-    average = total/total_input
 
-print ('all done')
-print ("Total: ",total," ,Total Input: ",total_input," ,Average: ",average)
+        total_input = total_input +1
+        total = total + num1
+        average = total/total_input
+
+    except:
+        print('Invaled Input')
+        continue
+    
+
+    print ('all done')
+    print ("Total: ",total," ,Total Input: ",total_input," ,Average: ",average)
