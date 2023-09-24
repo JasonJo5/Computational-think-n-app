@@ -1,4 +1,4 @@
-'''#Practice 1
+#Practice 1
 x = int(input("enter number ==> "))
 if x > 100:
     if x < 1000:
@@ -165,7 +165,7 @@ try:
     print(" Grade")
 
 except:
-  print("please enter numeric input between 0 and 100")'''
+  print("please enter numeric input between 0 and 100")
 
 #ASSIGNMENT 3
 
