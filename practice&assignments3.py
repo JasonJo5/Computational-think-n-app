@@ -18,7 +18,7 @@ else:
 #Practice 2
 score = int(input("Enter Your Score: "))
 
-if score>= 90:
+if score >= 90:
     print("A",end="")
 else:
     if score >= 80:
@@ -37,16 +37,16 @@ print("Grade")
 #Practice 3
 score = int(input("Enter Your Score: "))
 
-if score>= 90:
-    grade='A'
+if score >= 90:
+    grade ='A'
 elif score >= 80:
-    grade='B'
+    grade ='B'
 elif score >= 70:
-    grade='C'
+    grade ='C'
 elif score >= 60:
-    grade='D'
+    grade ='D'
 else:
-   grade='F'
+   grade ='F'
      
 print("Grade is %s" % grade)
 
@@ -63,7 +63,7 @@ except:
 n = 3
 while n > 0:
     print(n)
-    n = n -1
+    n = n - 1
 print("end of program")
 
 
@@ -144,7 +144,7 @@ try:
 
 
     if 0 <= score <= 100:
-     if score>= 90:
+     if score >= 90:
        print("A",end="")
      else:
       if score >= 80:
