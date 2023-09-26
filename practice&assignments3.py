@@ -12,7 +12,7 @@ else:
     if x == 100:
         print("equal to 100")
     else:
-        print("less than 100") 
+        print("less than 100")
 
 
 #Practice 2
@@ -110,15 +110,18 @@ for i in range(1, limit):
 #ASSIGNMENT 1
 while True:
 
+
     hours = 0
     rate = 0
 
+    
     try:
      hours = int(input("Enter Hours: "))
     except:
      print("Error, please enter numeric input")
      break
 
+     
     try:
      rate = float(input("Enter Rate: "))
     except:
@@ -128,11 +131,14 @@ while True:
 
     if hours <= 40:
      salary = hours*rate
-     print ("your Salary is: " + str(salary))
+     print ("your Salary is: ",salary)
+     break
+
     else:
-     if hours >= 40:                                 #45
+      hours >= 40
       salary = (40*rate) + ((hours%40)*rate*1.5)     #45%40 = 5x10.1,5
-      print ("your Salary is: " + str(salary))
+      print ("your salary is: ",salary)
+      break
 
 
 # ASSIGNMENT 2
@@ -158,11 +164,11 @@ try:
            else:
             if score >= 0:
                 print("F",end="")
-    
+
+     print(" Grade")
+
     else:
      print("please enter numeric input between 0 and 100")
-
-    print(" Grade")
 
 except:
   print("please enter numeric input between 0 and 100")
@@ -177,19 +183,20 @@ while True:
     
     number = input("Enter a number: ")
     if number == 'done':
+        print ('all done')
+        print ("Total: ",total," ,Total Input: ",total_input," ,Average: ",average)
         break
 
     try :
-        num1 = float(number)
+         num1 = float(number)
 
-        total_input = total_input +1
-        total = total + num1
-        average = total/total_input
+         total_input = total_input +1
+         total = total + num1
+         average = total/total_input
 
     except:
-        print('Invaled Input')
-        continue
+         print('Invaled Input')
+         continue
     
 
-    print ('all done')
-    print ("Total: ",total," ,Total Input: ",total_input," ,Average: ",average)
+    
