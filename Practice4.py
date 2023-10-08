@@ -72,13 +72,11 @@ print("outside function", num1, num2)
 #ASSIGNMENT 1
 Hrs = 0
 Rate = 0
-
 def computepay(Hrs,Rate):
     pay = Hrs * Rate
     return pay
 
 while True: #using while true, for a loop so i can put a break.
-
     try:
         Regular_Hrs = float(input("Enter Hours: "))
         Regular_Rate = float(input("Enter Rate: "))
